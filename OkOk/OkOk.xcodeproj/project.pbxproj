@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2BA1C2F2B940DA090A94D245 /* Pods_OkOk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3D0A28AD38479811A313A22 /* Pods_OkOk.framework */; };
 		637A7E182A0DD98500FD86FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637A7E172A0DD98500FD86FA /* AppDelegate.swift */; };
 		637A7E1A2A0DD98500FD86FA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637A7E192A0DD98500FD86FA /* SceneDelegate.swift */; };
 		637A7E1C2A0DD98500FD86FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637A7E1B2A0DD98500FD86FA /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		12B1E6B5CFE29AE9DA8ED0C3 /* Pods-OkOk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OkOk.release.xcconfig"; path = "Target Support Files/Pods-OkOk/Pods-OkOk.release.xcconfig"; sourceTree = "<group>"; };
 		637A7E142A0DD98500FD86FA /* OkOk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OkOk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		637A7E172A0DD98500FD86FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		637A7E192A0DD98500FD86FA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		637A7E202A0DD98600FD86FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		637A7E232A0DD98600FD86FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		637A7E252A0DD98600FD86FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75EE92BFFFD8866DF49B1CD1 /* Pods-OkOk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OkOk.debug.xcconfig"; path = "Target Support Files/Pods-OkOk/Pods-OkOk.debug.xcconfig"; sourceTree = "<group>"; };
+		C3D0A28AD38479811A313A22 /* Pods_OkOk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OkOk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BA1C2F2B940DA090A94D245 /* Pods_OkOk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				637A7E162A0DD98500FD86FA /* OkOk */,
 				637A7E152A0DD98500FD86FA /* Products */,
+				FC193D0AC93BE0FBD5D4BCC8 /* Pods */,
+				9005605708871A9FD55B9794 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = OkOk;
 			sourceTree = "<group>";
 		};
+		9005605708871A9FD55B9794 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C3D0A28AD38479811A313A22 /* Pods_OkOk.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FC193D0AC93BE0FBD5D4BCC8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				75EE92BFFFD8866DF49B1CD1 /* Pods-OkOk.debug.xcconfig */,
+				12B1E6B5CFE29AE9DA8ED0C3 /* Pods-OkOk.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 637A7E282A0DD98600FD86FA /* Build configuration list for PBXNativeTarget "OkOk" */;
 			buildPhases = (
+				FCC8F6255501C41AB55215C0 /* [CP] Check Pods Manifest.lock */,
 				637A7E102A0DD98500FD86FA /* Sources */,
 				637A7E112A0DD98500FD86FA /* Frameworks */,
 				637A7E122A0DD98500FD86FA /* Resources */,
+				34AD42420A1A32CBEF8963D3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		34AD42420A1A32CBEF8963D3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OkOk/Pods-OkOk-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OkOk/Pods-OkOk-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OkOk/Pods-OkOk-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCC8F6255501C41AB55215C0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OkOk-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		637A7E102A0DD98500FD86FA /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		637A7E292A0DD98600FD86FA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75EE92BFFFD8866DF49B1CD1 /* Pods-OkOk.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -309,6 +379,7 @@
 		};
 		637A7E2A2A0DD98600FD86FA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12B1E6B5CFE29AE9DA8ED0C3 /* Pods-OkOk.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
